@@ -1,12 +1,6 @@
 let movieActors = [
-     {
-    id: "dir_mx_001",
-    name: "Alfonso Cuarón",
-    nationality: "Mexicano",
-    birthYear: 1961,
-    birthPlace: "Ciudad de México",
-    notableAwards: ["2 Óscares", "3 Premios BAFTA", "Globo de Oro"]
-  }
+     { movieId: "mx_001", actorId: "act_mx_001", characterName: "Julio Zapata" },
+      { movieId: "mx_001", actorId: "act_mx_002", characterName: "Tenoch Iturbide" }
 ];
 
 module.exports = movieActors;
