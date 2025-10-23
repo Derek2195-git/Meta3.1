@@ -48,7 +48,7 @@ const createDirector = (req, res) => {
 
   // Validar campos obligatorios
   if (!id || !name || !nationality || !birthYear) {
-    return res.status(400).json({ message: "Faltan campos obligatorios: id, name, nationality, birthYear." });
+    return res.status(400).json({ message: "Faltan campos obligatorios." });
   }
 
   // Verificar que el director no exista

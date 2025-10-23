@@ -54,7 +54,7 @@ const createActor = (req, res) => {
 
   // Validar campos obligatorios
   if (!id || !name || !nationality || !birthYear) {
-    return res.status(400).json({ message: "Faltan campos obligatorios: id, name, nationality, birthYear." });
+    return res.status(400).json({ message: "Faltan campos obligatorios." });
   }
 
   // Verificar que el actor no exista
