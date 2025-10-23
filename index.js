@@ -5,7 +5,7 @@ const PORT = 3000;
 app.use(express.json());
 
 // Importar rutas
-const moviesRoutes = require('./routes/moviesRoutes');
+const moviesRoutes = require('./routes/movies');
 
 // Usar rutas
 app.use('/api/movies', moviesRoutes);
