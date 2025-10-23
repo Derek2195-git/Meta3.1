@@ -8,11 +8,13 @@ app.use(express.json());
 const moviesRoutes = require('./routes/movies');
 const directorsRoutes = require('./routes/directors');
 const actorsRoutes = require('./routes/actors');
+const movieActorsRoutes = require('./routes/movieActors');
 
 // Usar rutas
 app.use('/api/movies', moviesRoutes);
 app.use('/api/directors', directorsRoutes);
 app.use('/api/actors', actorsRoutes);
+app.use('/api/movies', movieActorsRoutes);
 
 // Endpoint raíz
 app.get('/', (req, res) => {
