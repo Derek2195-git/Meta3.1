@@ -6,9 +6,11 @@ app.use(express.json());
 
 // Importar rutas
 const moviesRoutes = require('./routes/movies');
+const directorsRoutes = require('./routes/directors');
 
 // Usar rutas
 app.use('/api/movies', moviesRoutes);
+app.use('/api/directors', directorsRoutes);
 
 // Endpoint raíz
 app.get('/', (req, res) => {
